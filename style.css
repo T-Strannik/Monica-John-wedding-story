@@ -1,0 +1,306 @@
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+body{
+	margin: 0;
+	
+}
+header h1, header h1+p, nav{
+	text-align: center;
+	color: #3e3e3e
+}
+header h1{
+	font-family: 'Tangerine';
+	font-weight: 700;
+	font-size: 53px;
+}
+header p{
+	font-style: italic;
+	font-size: 25px
+}
+header nav, footer{
+	background: #c22e41; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c22e41 0%, #e24b5f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c22e41 0%,#e24b5f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c22e41 0%,#e24b5f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c22e41', endColorstr='#e24b5f',GradientType=0 ); /* IE6-9 */
+	padding: 25px 0 80px 0;
+}
+header nav ul{
+	display: none;
+}
+nav select {
+	width: 80%;
+	height: 40px;
+	font-size: 25px
+}
+.container{
+	width: 95%;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	font-size: 14px
+}
+.container>div{
+	background: #fff;
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 30px 0;
+}
+img{
+	width: 100%;
+}
+span{
+	color: #c22e41;
+}
+.main{
+	margin-top: -80px;
+}
+.shadow{
+	position: relative;
+}
+.shadow:before, .shadow:after{
+	z-index: -1;
+    /*position: absolute;*/
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.shadow:after{
+	-webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+.bord{
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+}
+.bord>img{
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.clearfix h2{
+	font-family: 'Tangerine';
+	font-weight: 700;
+	font-size: 48px;
+	text-align: center;
+	margin: 0 0 10px;
+}
+.bord h3{
+	font-family: 'Tangerine';
+	font-weight: 700;
+	font-size: 36px;
+	margin: 10px 0 -5px 0;
+}
+.video{
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	padding: 10px;
+}
+.video h3{
+	background: #c22e41; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c22e41 0%, #e24b5f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c22e41 0%,#e24b5f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c22e41 0%,#e24b5f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c22e41', endColorstr='#e24b5f',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    text-align: center;
+    width: auto;
+    margin: -10px -10px auto;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    font-family: 'Tangerine';
+	font-weight: 700;
+	font-size: 36px;
+
+}
+.video img{
+	margin-top: 10px;
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.video p{
+	text-align: center;
+}
+.fl-r{
+	float: right !important;
+}
+.fl-l{
+	float: left !important;
+}
+.contur img, .contur p{
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.container-2{
+	width: 95%;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	font-size: 14px
+}
+footer ul li{
+	list-style: none;
+	margin-left: -40px;
+}
+footer ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+footer{
+	color: #fff;
+}
+.slider{
+	margin: auto;
+	position: relative;/*чтобы нижние точки с absolut ставились относительно только слайдера*/
+}
+.slides{
+	overflow: hidden;
+}
+.slides ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 300%; 
+	position: relative;
+	-webkit-transition: left 1s;
+	-o-transition: left 1s;
+	transition: left 1s;
+	left: 0;
+
+}
+.slides ul li{
+	float: left;
+	width: 33.333%; 
+}
+.slides ul li img{
+	width: 100%
+}
+.slider input[name="r"]+label{
+	width: 16px;
+	height: 16px;
+	display: block; /*надо указать, т.к сам элмент линейный*/
+	background: #ddd;
+	border: 1px #777 solid;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	margin-left: -8px; /*чтобы отодвинуть центр четко на пол-круга*/
+	z-index: 1
+}
+.slider input[name="r"]:checked+label{
+	background: #c22e41;
+	border-color: #c22e41;
+}
+
+#r1+label{margin-left: -54px}
+#r2+label{margin-left: -30px}
+
+.slider input[name="r"]{
+	display: none
+}
+
+#r2:checked~.slides ul{
+	left: -100%;
+}
+#r3:checked~.slides ul{
+	left: -200%;
+}
+
+.arrow{
+	width: 28px;
+	height: 37px;
+	display: block;
+	background: url(images/arrows.png);
+	position: absolute;
+	top: 50%;
+	margin-top: -18px;
+	z-index: 1;
+	display: none;
+}
+#r1:checked~.arrow2,
+#r2:checked~.arrow3{
+	display: block;
+	right: 20px;
+	background-position: 100% 0
+}
+#r2:checked~.arrow1,
+#r3:checked~.arrow2{
+	display: block;
+	left: 20px;
+}
+
+
+
+@media screen and (min-width: 768px){
+	header nav ul{
+		display: table;
+		margin: 0 auto;
+	}
+	header nav ul li{
+		list-style: none;
+		float: left;
+		margin: 0 5px;
+	}
+	header nav ul li a{
+		padding: 5px 15px;
+		display: block;
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+		border-radius: 5px;
+		font-size: 20px;
+	}
+	select{
+		display: none;
+	}
+	header nav ul li a:hover{
+		background: #fff;
+		color: #e24b5f;
+	}
+	.container{
+		width: 65%;
+	} 
+	.container-2{
+		width: 72%;
+		color: #fff;
+	}
+	.container-2 p{
+		margin-left: 40px
+	}
+	footer ul{
+		display: table;
+		padding-left: 80px;
+	}
+	footer ul li{
+		float: left;
+		margin-right: 50px;
+
+	}	
+}
